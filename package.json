@@ -10,10 +10,9 @@
     "prettier": "prettier --write **/*.{ts,js}",
     "build": "rimraf lib && tsc -p tsconfig.json",
     "lint": "tslint -p . -c tslint.json",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --forceExit"
   },
   "devDependencies": {
-    "@types/bluebird": "^3.5.29",
     "@types/jest": "^24.0.11",
     "@types/node": "^10.5.3",
     "casbin": "^3.0.8",
@@ -27,7 +26,6 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "bluebird": "^3.7.2",
     "etcd3": "^0.2.13"
   },
   "files": [
